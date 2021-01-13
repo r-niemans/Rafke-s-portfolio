@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rafke's portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  <!-- Static navbar -->
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html">PORTFOLIO RAFKE MSI</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">Over mij</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="start.html">Start</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="connection.html">Connection</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="bibliotheek.html">Bibliotheek</a></li>
+         
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="connection.html">Connection</a></li>
+      <li class="breadcrumb-item"><a href="connectionlessen.html">Connection lessen</a></li>
+      <li class="breadcrumb-item active" aria-current="page"> COVID-19 API  </li>
+    </ol>
+  </nav>  
+
+  <!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Covid-19</title>
+
+        <link rel="stylesheet" type="text/css" href="Css/Coronastyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+
+    </head>
+
+    <style>
+
+        body {
+        
+            font-family: 'Montserrat', sans-serif;
+        
+            font-weight: 500;
+        
+            font-size: 1.3em;
+        
+            color: black;
+        
+            text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
+        
+            height: 100vh;
+        
+       
+        
+           
+        
+        
+        
+            background-image: url(https://dollarfootage.com/wp-content/uploads/2017/05/tetrahedron-particle-field-background-animation-white-2-img.jpg) ;
+        
+        }
+                  </style>         
+
+    <body>
+       <div class="margin2">
+        <h1>
+
+            Covid-19 numbers in the
+
+            <div id="land"></div>
+
+        </h1>
+
+        <p1>    
+
+            New confirmed infections:
+
+            <div id="Newinfections"></div>
+
+            </p1>
+
+            <br>
+
+        <p2>
+
+            Deaths today:
+
+            <div id="Newdeaths"></div>
+
+            </p2>
+
+            <br>
+
+        <p3>
+
+            Total deaths:
+
+            <div id="Totaldeaths"></div>
+
+            </p3>
+
+            <br>
+
+            <p4> 
+             
+                New recovered: 
+
+                <div id="Newrecovered"> </div>
+           
+            </p4>
+          <br> 
+
+        <p5>
+
+            Datum:
+
+            <div id="datum"></div>
+
+            </p5>
+
+        
+</div>
+    </div>
+
+ 
+
+            <script lang="text/javascript">
+
+                fetch('https://api.covid19api.com/summary')
+
+                    .then(function(resp) { return resp.json() })
+
+                    .then(function(data) {
+
+                    console.log(data);
+
+                    console.log(data.Countries[121].Country);
+
+                    console.log(data.Countries[121].TotalDeaths);
+
+                    document.getElementById("land").innerHTML = (data.Countries[121].Country);
+
+                    document.getElementById("datum").innerHTML = (data.Countries[121].Date);
+
+                    document.getElementById("Totaldeaths").innerHTML = (data.Countries[121].TotalDeaths);
+
+                    document.getElementById("Newdeaths").innerHTML = (data.Countries[121].NewDeaths);
+
+                    document.getElementById("Newinfections").innerHTML = (data.Countries[121].NewConfirmed);
+
+                    document.getElementById("Newrecovered").innerHTML = (data.Countries[121].NewRecovered);
+
+                    })
+
+                    .catch(function() { 
+
+                    });
+
+            </script>
+
+    </body>
+
+
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rafke's portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/r_icon.ICO" rel="icon">
+  <link href="img/r icon.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  <!-- Static navbar -->
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html">PORTFOLIO RAFKE MSI</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">Over mij</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="start.html">Start</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="connection.html">Connection</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="bibliotheek.html">Bibliotheek</a></li>
+         
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+     
+      <li class="breadcrumb-item"><a href="connection.html"> Connection </a></li>
+      <li class="breadcrumb-item active" aria-current="page"> Databases </li>
+    </ol>
+  </nav>
+
+  <div class="container pt">
+    <div class="row mt">
+      <div class="col-lg-6 col-lg-offset-3 centered">
+        <h3>SQL vs NO SQL </h3>
+        <hr>
+        <p> Informatie is hier verwerkt na ik onderzoek heb gedaan naar typen databases en ook een visie heb geformuleerd hierop die onderaan te vinden is. </p>
+      </div>
+    </div> 
+    </div> 
+
+    <div class= "margin"> 
+          <h4> Databases: SQL vs No SQL </h4>
+          <table>
+            <tr>
+              <th>SQL</th>
+              <th>NoSQL</th>
+              
+              
+            </tr>
+            <tr>
+              <td>Structured Query Language, bepaalde sleuteltermen en syntax woorden (Select, from etc) hier moet data bij worden gezet en zo kunnen commando's worden ingesteld. SQL is een relationele database die werkt met tabellen.</td>
+              <td>Database die enorm veel data kan opslaan waar niet met tabellen wordt gewerkt, maar verzamelingen en daarin staan documenten.</td>
+              
+            </tr>
+            <tr>
+              <td> Werkt volgens een bepaalde strutuur (ook wel een schema genoemd) waar niet van kan worden afgeweken, alle rijen en kolommen moeten worden ingevuld. </td>
+              <td> Geen structuur, velden hoeven niet allemaal ingevuld te worden waardoor er later nog data toegevoegd kan worden.</td>
+            
+            </tr>
+            <tr>
+              <td>Werkt met meerdere tabellen en schema's die verband houden met elkaar. Typen relaties zijn: One-to-one, one-to-many en many-to-many. </td>
+              <td> Binnen NoSQL hebben verzamelingen of documenten niet vaak een verband met elkaar, dit kan echter wel handmatig worden toegevoegd, al wordt dat zelden gedaan. </td>
+             
+            </tr>
+            <tr>
+              <td>JOIN-opdracht is bij SQL mogelijk, hierbij wordt er in één zoekopdracht matchende data gezocht in alle tabellen. </td>
+              <td> NoSQL heeft geen grenzen wat betreft het uitvoeren van massa lees- en schrijfopdrachten. Al ligt het er wel aan hoe vaak de data geüpdated moet worden, aangezien SQL in dat geval handiger is.</td>
+            </tr>
+
+              <tr>
+              <td>SQL heeft door ACID (Atomicity, Consistency, Isolation & Durability) een duidelijke semantiek, door valide en bruikbare data en daardoor zijn ook transacties mogelijk. </td>
+            <td> Horizontale en verticale scaling is beter mogelijk bij NoSQL databases, omdat er makkelijker verzamelingen kunnen worden gesplit (horizontaal) en er geen grenzen zijn wat betreft het vergroten van de servercapaciteit (verticaal). </td>
+           
+            </tr>
+          
+            </table>
+          <br> 
+            <table> 
+              <th>SQL Business context </th>
+              <th>NoSQL Business context </th>
+
+              <tr> 
+                <td> 
+                  SQL databases zullen al gauw eerder worden gebruikt bij financiële bedrijven die een betrouwbare database zoeken die relaties kan vinden en ook voldoen aan ACID. 
+                  <br> Daarom is het ook zo dat bankiers en financiële medewerkers vaak enige kennis benodigen van SQL, aangezien ze er vaak zelf mee en aan werken. 
+                  <br>Ook in de logistieke wereld is SQL vaak logischer en meer gestructureerd dan NoSQL, dit komt doordat orders stukken makkelijker gevonden en georganiseerd kunnen worden in SQL databases. 
+                    Klanten kunnen daarnaast op basis van hun order worden teruggevonden en door een JOIN opdracht kan de hele database worden doorzocht naar de benodigde gegevens. <br> De meeste management systemen zijn ook opgebouwd via SQL, omdat het relationele aspect terug blijft komen en zorgt voor de vaak vereiste efficiëntie.
+                </td>
+                <td> NoSQL databases worden veel door onderzoekers, journalisten en docenten/professoren worden gebruikt. Veel van dit soort beroepen hebben informatie nodig die in grote databanken staan en gesorteerd is in documenten. Dat is natuurlijk het voordeel aan NoSQL, hierin kan namelijk nog meer informatie worden opgeslagen dan in SQL databases.    </td>
+              </tr>
+
+            </table>
+ <Br> 
+            <h4> Andere soorten databases </h4>
+            <h5> Hiërarchische database </h5>
+            <p> Data wordt verzameld in een boom-achtige structuur waar bij elk veld van die structuur maar één veld kan worden ingevuld. Naar elk van de middelste velden is een link, maar dat is dan weer maar één link. Dit is de (hierboven al genoemd) one-to-many structuur.
+              Een groot nadeel is dat de velden die naast elkaar staan dus niet met elkaar verbonden kunnen worden, maar alleen met het veld dat er logischerwijze boven zit.   </p>
+
+            <h5> Network databases </h5>
+             <p> Dit type databases lijkt op de hiervoor genoemde soort, alleen kunnen in dit geval bepaalde velden wel meer dan één verband met elkaar hebben. Dit is dan ook een many-to-many structuur.</p>
+            <h5> Object-oriented databases </h5>
+            <p> Bij deze database worden programmeertalen gecombineerd met de functionaliteit van de data. Objecten die losstaan van software zijn opgeslagen in de database.
+              Elk object bestaat uit 2 elementen, namelijk: Een bundel van data en instructies voor wat er met de data kan worden gedaan. 
+              Voordeel is dat je de data en software dus bij elkaar hebt staan en zo meteen wat wat je eraan hebt. 
+            </p>
+            <h5> Document databases </h5>
+            <p> NoSQL soort database, aangezien het data in de vorm van documenten op slaat. Data elementen van documenten hebben door key elements een verband met elkaar.
+              Door de functionaliteit van NoSQL is er een mechanisme dat documenten snel heeft gevonden en ook snel heeft verwerkt in de database. </p>
+
+            <h4> Visie op bedrijven die nog geen optimaal gebruik maken van databases </h4>
+            <p> Zoals uit de tabellen hierboven vast wel duidelijk is geworden, zijn databases enorm belangrijk voor het vinden en ook opslaan van informatie. 
+            Bij meerdere doelgroepen en ook bedrijfssectoren komen ze dan ook steeds vaker voor, we maken vaker gebruik van databases dan dat we denken. Bij het onderzoek doen naar data en hier ook verbanden uit willen kunnen halen, is een SQL database het beste.
+            Ik heb hier vorig jaar zelf ook in en mee gewerkt en het handigste is dat de informatie meestal kan worden geëxporteerd naar een Excel bestand. 
+            <Br> <br> Maar Excel moet zeker niet de hemel in worden geprezen, want alsnog werken veel bedrijven nog onnodig veel in Excel. Daar moeten ze handmatig gegevens invullen en ook zullen ze ergens in de tientallen tabbladen de gegevens moeten terugvinden. 
+            Vooral als bedrijven met klanten werken is het zoveel handiger om een SQL database te hebben, om zo zorgvuldig om kunnen gaan met de klantgegevens. Ook HR-systemen besparen veel werk als ze personeelsgegevens zoals salaris, instroom- en uitstroomdocumenten, certificaten en contracten in beveiligde databases zouden gaan bewaren.
+            Bovendien zijn dit gevoelige gegevens, waardoor de ernst nog groter is om ze op een veilige plek te bewaren. Het relationele aspect van SQL databases zorgt er dan ook weer voor dat bepaalde gegevens aan één medewerker kunnen worden gekoppeld zoals het salaris en vakantiedagen. (NI Business Info, z.d.) 
+            </p>
+       </div>
+       
