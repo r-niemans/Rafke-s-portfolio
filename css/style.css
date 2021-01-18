@@ -39,6 +39,14 @@ table {
   margin-right: 200px;
 
 } 
+.margin3 { 
+margin-left: 700px;
+margin-right:700px;
+margin-top:200px;
+
+
+}
+
 
 .margin5{ 
 
@@ -46,7 +54,7 @@ table {
 
   }
 
-}
+
 .margin2 { 
  margin-left: 100px;
 
@@ -75,6 +83,22 @@ p {
   margin-bottom: 25px;
   font-size: 16px;
 }
+
+/* Resources */
+
+dt {
+    font-weight: bold;
+}
+
+dl,
+dd {
+    font-size: 15px;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
 
 .centered {
   text-align: center;
@@ -208,34 +232,6 @@ hr {
   background-color: #ffffff;
 }
 
-/* Blog Date*/
-
-bd {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #d2d2d2;
-  font-weight: 700;
-}
-
-/* Blog Author*/
-
-ba {
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-/* Blog Quote */
-
-.bq {
-  font-size: 22px;
-  padding-top: 30px;
-}
-
-/* Blog Tags */
-
-bt {
-  font-size: 12px;
-}
 
 /* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
 
@@ -260,9 +256,7 @@ bt {
   background-position: center;
 }
 
-{
-  box-sizing: border-box;
-}
+
 
 .column3 {
   float: left;

@@ -105,10 +105,12 @@
             background-image: url(https://dollarfootage.com/wp-content/uploads/2017/05/tetrahedron-particle-field-background-animation-white-2-img.jpg) ;
         
         }
-                  </style>         
+                  </style>    
+
 
     <body>
-       <div class="margin2">
+      <div class="margin"> 
+       
         <h1>
 
             Covid-19 numbers in the
@@ -158,15 +160,14 @@
 
         <p5>
 
-            Datum:
+            Date:
 
             <div id="datum"></div>
 
             </p5>
 
-        
-</div>
-    </div>
+          </div>
+          </div> 
 
  
 
@@ -180,21 +181,21 @@
 
                     console.log(data);
 
-                    console.log(data.Countries[121].Country);
+                    console.log(data.Countries[119].Country);
 
-                    console.log(data.Countries[121].TotalDeaths);
+                    console.log(data.Countries[119].TotalDeaths);
 
-                    document.getElementById("land").innerHTML = (data.Countries[121].Country);
+                    document.getElementById("land").innerHTML = (data.Countries[119].Country);
 
-                    document.getElementById("datum").innerHTML = (data.Countries[121].Date);
+                    document.getElementById("datum").innerHTML = (data.Countries[119].Date);
 
-                    document.getElementById("Totaldeaths").innerHTML = (data.Countries[121].TotalDeaths);
+                    document.getElementById("Totaldeaths").innerHTML = (data.Countries[119].TotalDeaths);
 
-                    document.getElementById("Newdeaths").innerHTML = (data.Countries[121].NewDeaths);
+                    document.getElementById("Newdeaths").innerHTML = (data.Countries[119].NewDeaths);
 
-                    document.getElementById("Newinfections").innerHTML = (data.Countries[121].NewConfirmed);
+                    document.getElementById("Newinfections").innerHTML = (data.Countries[119].NewConfirmed);
 
-                    document.getElementById("Newrecovered").innerHTML = (data.Countries[121].NewRecovered);
+                    document.getElementById("Newrecovered").innerHTML = (data.Countries[119].NewRecovered);
 
                     })
 
