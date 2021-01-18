@@ -21,9 +21,15 @@ table {
 	border-collapse: collapse;
 	width: 100%;
   }
+
+  .table2 {
+	
+    border-collapse: collapse;
+    width: 50%;
+    }
   
   td, th {
-	border: 3px solid #dddddd;
+	border: 2px solid #dddddd;
 	text-align: left;
 	padding: 7px;
   }
@@ -31,6 +37,8 @@ table {
   tr:nth-child(even) {
 	background-color:lightsteelblue;
   }
+
+  
  
 /*Text margin*/ 
 
