@@ -60,7 +60,7 @@
     <ol class="breadcrumb">
      
       <li class="breadcrumb-item"><a href="technology.html">Technology</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Plantsysteem</li>
+      <li class="breadcrumb-item active" aria-current="page">Plantsysteem/Blynk API</li>
     </ol>
   </nav>
 
@@ -68,14 +68,80 @@
   <div class="container pt">
     <div class="row mt">
       <div class="col-lg-6 col-lg-offset-3 centered">
-        <h3> IoT schakeling</h3>
+        <h3> IoT schakeling + Blynk API </h3>
         <hr>
-        <p> Hier is het proces van het solderen en de IoT-schakeling te vinden, ook de koppeling naar het bedrijfsleven en de overkoepelende reflectie zijn op deze pagina te lezen.  </p>
+        <p> Hier is het proces van het solderen en alles over de IoT-schakeling te vinden, zoals: Data die vanuit de app wordt weergegeven, de koppeling naar het bedrijfsleven en de overkoepelende reflectie. </p>
       </div>
     </div> 
     </div> 
+    <div class="margin"> 
+    <h4> Data vanuit Blynk app, die door de API te zien is hieronder. </h4>
 
-    <div class= "margin"> 
+
+    <br><br>
+    <meta http-equiv="refresh" content="120" />
+    
+    <head>
+    <script>
+    
+    var auth_token = 'DeQiORARX0ChQRzdCvvq6Ee1Qk9fsRWk';
+    
+    function get_pin(pin, element) {
+    
+    fetch('http://blynk-cloud.com/' + auth_token + '/get/' + pin)
+    .then(response => response.json())
+    .then(data => {
+    window[pin] = data;
+    document.getElementById(element).innerHTML = data;
+    })
+    .catch(error => console.error(error))
+    
+    }
+    
+    get_pin('V1', "Vochtigheid");
+    get_pin('V2', "Temperatuur");
+    get_pin('V4', "Lichtwaarde");
+    get_pin('V6', "Vocht");
+    </script>
+    
+    </head>
+    
+    <body>
+    
+    <table class="table2">
+    
+      <tr>
+        <th > Component </th>
+        <th > Laatste gemeten waarde </th>
+        
+      </tr>
+    
+    
+      <tr>
+        <td>Luchtvochtigheid</td>
+        <td><div id="Vochtigheid">V1</div></td>
+     
+      </tr>
+      <tr>
+        <td>Temperatuur</td>
+        <td><div id="Temperatuur">V2</div></td>
+        
+      </tr>
+      <tr>
+        <td> Lichtwaarde </td>
+        <td><div id="Lichtwaarde">V4 </div></td>
+        
+      </tr>
+      <tr>
+        <td>Vochtigheid </td>
+        <td><div id="Vocht">V6</div></td>
+       
+      </tr>
+     
+    
+    </table>
+
+    <br> <Br> 
           <h4> Solderen </h4>
            <p> Nadat iedereen de zelf ontworpen PCB's had ontvangen, konden we aan de slag gaan met het solderen van de PCB's. 
              We hebben pin headers met de PCB's samen ontvangen, deze hoor je dus te bevestigen en te solderen op de PCB's, zodat het ESP erop past. 
